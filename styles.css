@@ -111,8 +111,8 @@ body {
 }
 
 .avatar-small {
-    width: 10vw;
-    height: 10vh;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #f4f4f4;
 }
