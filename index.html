@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>-cheska portfolio-</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  </head>
+  <body>
+    <div class="cover-photo">
+      <div class="avatar-container">
+        <img src="assets/img/avatar-1.jpg" alt="avatar" class="avatar" />
+        <strong>Francheska Mei Besana</strong>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100005269907780"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/cheska_besana/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="hire-me">
+          <button onclick="openGmail()">Hire Me</button>
+        </div>
+        <script>
+          function openGmail() {
+            const email = "fracheskamei.besana@msugensan.edu.ph";
+            const subject = "Job Offer: [Job Title] at [Company Name]";
+            const body = `Dear Francheska Mei,
+        
+            We are thrilled to extend an offer to you for the position of [Job Title] at [Company Name]. After careful consideration, we are confident that your skills and experiences align perfectly with the needs of our team.
+        
+            Here are the details of your offer:
+        
+            If you have any questions or need further information, feel free to reach out.
+        
+            Best regards,
+        
+            [Company Name]
+            [Contact Information]`;
+
+            const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+              email
+            )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+              body
+            )}`;
+
+            const confirmSend = confirm(
+              `Are you sure you want to send this job offer email to ${email}?`
+            );
+
+            if (confirmSend) {
+              window.open(mailtoLink, "_blank");
+            }
+          }
+        </script>
+        <div class="scroll-down-msg">
+          <p>Scroll Down <i class="fas fa-arrow-down"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="sidebar">
+        <div class="sidebar-links">
+          <a href="#home"><i class="fas fa-home"></i></a>
+          <a href="#about"><i class="fas fa-user"></i></a>
+          <a href="#skills"><i class="fas fa-chart-bar"></i></a>
+          <a href="#education"><i class="fas fa-briefcase"></i></a>
+        </div>
+      </div>
+      <div class="main-content"  data-aos="fade-up">
+        <section id="about" class="section">
+          <h2>About Me</h2>
+          <div class="about-container">
+            <div class="about-avatar">
+              <img
+                src="assets/img/avatar-1.jpg"
+                alt="avatar"
+                class="avatar-small"
+              />
+            </div>
+            <div class="about-details">
+              <div class="description-and-cv">
+                <p>
+                  I'm Cheska, a 4th-year student at Mindanao State University,
+                  pursuing a Bachelor of Science in Information Technology with
+                  a major in Network Track.
+                </p>
+                <button class="download-cv">Download CV</button>
+              </div>
+              <div class="skills">
+                <div class="skill">
+                  <span>PHP</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>Project Documentation</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>Network Track</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="tally-counters"  data-aos="fade-up">
+          <div class="counter">
+            <i class="fas fa-tasks"></i>
+            <span class="counter-number">20</span>
+            <span class="counter-label">Projects Completed</span>
+          </div>
+          <div class="counter">
+            <i class="fas fa-coffee"></i>
+            <span class="counter-number">150</span>
+            <span class="counter-label">Cups of Coffee</span>
+          </div>
+          <div class="counter">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="counter-number">10</span>
+            <span class="counter-label">Merch Bought</span>
+          </div>
+          <div class="counter">
+            <i class="fas fa-briefcase"></i>
+            <span class="counter-number">5</span>
+            <span class="counter-label">Concert Attended</span>
+          </div>
+        </div>
+
+        <section id="skills" class="section"  data-aos="fade-up">
+          <h2>Skills</h2>
+          <div class="skills-container">
+            <div class="skill-card skill-card-1">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>PHP</h3>
+              <p>
+                Developed and implemented a Dental Information System using PHP,
+                focusing on efficient data management, user-friendly interfaces,
+                and secure processing of patient records.
+              </p>
+            </div>
+            <div class="skill-card skill-card-2">
+              <div class="skill-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>Project Documentation</h3>
+              <p>
+                Responsible for creating and maintaining comprehensive
+                documentation throughout the project's lifecycle. This included
+                writing detailed reports, compiling technical specifications,
+                and ensuring all project deliverables were clearly documented
+                for future reference and stakeholder review.
+              </p>
+            </div>
+            <div class="skill-card skill-card-3">
+              <div class="skill-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>Network Track</h3>
+              <p>
+                Specialized in the Network Track of the BSIT program, with a
+                knowledge of network design, security, and management.
+                Experienced in network cabling, including the installation and
+                termination of UTP and fiber optic cables, ensuring strong and
+                effective network connections.
+              </p>
+            </div>
+          </div>
+          <p class="custom-job">
+            Looking for a custom job?
+            <a href="#" onclick="openGmail()">Click here to contact me!</a> 🖐
+          </p>
+        </section>
+
+        <section id="education" class="section"  data-aos="fade-up">
+          <h2>Education</h2>
+          <div class="education-container">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                  <span class="education-date">2021 - Present</span>
+                  <h3 class="education-degree">
+                    Bachelor of Science in Information Technology
+                  </h3>
+                  <p>Mindanao State University</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                  <span class="education-date">2019 - 2020</span>
+                  <h3 class="education-degree">Senior High School</h3>
+                  <p>Ramon Magsaysay Memorial Colleges</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                  <span class="education-date">2015 - 2018</span>
+                  <h3 class="education-degree">Junior High School</h3>
+                  <p>Ramon Magsaysay Memorial Colleges</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+  </body>
+</html>
